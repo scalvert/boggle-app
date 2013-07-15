@@ -2,27 +2,117 @@
 <html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
+  <title>Battlefy Boogle Challenge</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/vendor/bootstrap-responsive.min.css"/>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
 
-  <div ng-view></div>
+  <!-- Navbar
+    ================================================== -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="./index.html">Battlefy Boogle Challenge</a>
+        <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">New Game</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <form class="form-horizontal">
+            <input type="text" placeholder="Enter word…">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="alert alert-error hidden">error</div>  
+ 
+        <table class="table table-striped">
+          <tr>
+            <th>Word</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td class="word">word 1</td>
+            <td class="points"> 30 pt</td>
+          </tr>
+          <tr>
+            <td>word 2</td>
+            <td> 20 pt</td>
+          </tr>
+          <tr class="total">
+            <td></td>
+            <td>50pt</td>
+          </tr>
+        </table>
+      </div>
+  
+
+      <div class="span8">
+        <div class="row-fluid boogle-board-controlelrs">
+          <div class="span12">
+            <div class="timer-container">Timer: 3:00</div>
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span12">
+            <table class="boogle-board">
+              <tr>
+                <td>A</td>
+                <td>C</td>
+                <td>D</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>E</td>
+                <td>P</td>
+                <td>M</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>G</td>
+                <td>N</td>
+                <td>T</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td>B</td>
+                <td>A</td>
+                <td>C</td>
+                <td>D</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+-->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/bootstrap/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
