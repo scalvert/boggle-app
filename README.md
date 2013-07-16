@@ -1,4 +1,4 @@
-# Battlefy Boogle Challenge
+# Battlefy Boggle Challenge
 
 Boggle is a word game played using a plastic grid of lettered dice, in which players attempt to find words in sequences of adjacent letters. Your request today is to re-create the boggle game in Javascript.
 
