@@ -31,77 +31,7 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="span4">
-        <form class="form-horizontal">
-            <input type="text" placeholder="Enter word…">
-            <button type="submit" class="btn">Submit</button>
-        </form>
-        <div class="alert alert-error hidden">error</div>  
- 
-        <table class="table table-striped">
-          <tr>
-            <th>Word</th>
-            <th>Points</th>
-          </tr>
-          <tr>
-            <td class="word">word 1</td>
-            <td class="points"> 30 pt</td>
-          </tr>
-          <tr>
-            <td>word 2</td>
-            <td> 20 pt</td>
-          </tr>
-          <tr class="total">
-            <td></td>
-            <td>50pt</td>
-          </tr>
-        </table>
-      </div>
-  
-
-      <div class="span8">
-        <div class="row-fluid boogle-board-controlelrs">
-          <div class="span12">
-            <div class="timer-container">Timer: 3:00</div>
-          </div>
-        </div>
-
-        <div class="row-fluid">
-          <div class="span12">
-            <table class="boogle-board">
-              <tr>
-                <td>A</td>
-                <td>C</td>
-                <td>D</td>
-                <td>N</td>
-              </tr>
-              <tr>
-                <td>E</td>
-                <td>P</td>
-                <td>M</td>
-                <td>I</td>
-              </tr>
-              <tr>
-                <td>G</td>
-                <td>N</td>
-                <td>T</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <td>B</td>
-                <td>A</td>
-                <td>C</td>
-                <td>D</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
+  <ng-view></ng-view>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
