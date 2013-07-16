@@ -29,3 +29,11 @@ There are four features we would like to see implemented
 * Points system
 * Timer
 
+For each of the features: 
+* write up user stories
+* estimate how long it will take you to implement
+* implement the features
+* write tests
+
+At the end, we will do a code review for all the features.
+
