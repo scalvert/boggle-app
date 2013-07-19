@@ -3,6 +3,6 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('BoggleCtrl', [function() {
-
+  controller('BoggleCtrl', [function($scope) {
+    $scope.boggleLetters = new BoardGenerator().generate();
   }]);
